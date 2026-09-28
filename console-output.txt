@@ -1,0 +1,54 @@
+[LIFECYCLE] InMemoryEmployeeRepository initialized (profile = dev)
+[LIFECYCLE] EmployeeServiceImpl initialized, using InMemoryEmployeeRepository
+
+=== 1. Add valid employees (validation -> save -> audit -> 3 notifiers) ===
+   (new AuditLogger instance #1 created)
+   [AUDIT #1] 2026-09-28 08:28:24.326 - Added employee Ahmed Hassan
+Email: Welcome aboard, Ahmed Hassan (Engineering)!
+SMS: Welcome aboard, Ahmed Hassan (Engineering)!
+Push: Welcome aboard, Ahmed Hassan (Engineering)!
+   (new AuditLogger instance #2 created)
+   [AUDIT #2] 2026-09-28 08:28:24.336 - Added employee Sara Ali
+Email: Welcome aboard, Sara Ali (HR)!
+SMS: Welcome aboard, Sara Ali (HR)!
+Push: Welcome aboard, Sara Ali (HR)!
+
+=== 2. Add invalid employees (validation fails, handled gracefully) ===
+   Could not add employee: Employee name must not be blank
+   Could not add employee: Salary must not be negative (was -500.0)
+
+=== 3a. Raise within the limit (10%) ===
+   (new AuditLogger instance #3 created)
+   [AUDIT #3] 2026-09-28 08:28:24.340 - Raise 10.0% for Ahmed Hassan
+Email: Congratulations Ahmed Hassan! Salary 15000.00 -> 16500.00 EGP
+SMS: Congratulations Ahmed Hassan! Salary 15000.00 -> 16500.00 EGP
+Push: Congratulations Ahmed Hassan! Salary 15000.00 -> 16500.00 EGP
+
+=== 3b. Raise above the limit (35%) ===
+SMS: URGENT: Rejected raise of 35.0% for employee 2
+   Raise rejected: Raise of 35.0% exceeds the maximum of 20.0%
+
+=== 4. Prototype vs singleton ===
+   (new AuditLogger instance #4 created)
+   (new AuditLogger instance #5 created)
+   (new AuditLogger instance #6 created)
+   AuditLogger instances: #4, #5, #6
+   logger1 == logger2 ? false   (prototype -> new object every time)
+   service == service2 ? true    (singleton -> same object)
+
+=== 5. @Primary: asking for ONE Notifier ===
+   context.getBean(Notifier.class) -> EmailNotifier
+
+=== 6. All employees ===
+   Employee{id=1, name='Ahmed Hassan', department='Engineering', salary=16500.00}
+   Employee{id=2, name='Sara Ali', department='HR', salary=12000.00}
+
+=== 7. Injected @Value properties ===
+   company.name             = NTI Training 
+   company.currency         = EGP
+   notification.retry-count = 3
+   raise.max-percentage     = 20.000000
+
+=== 8. Closing the context (@PreDestroy callbacks) ===
+[LIFECYCLE] EmployeeServiceImpl destroyed
+[LIFECYCLE] InMemoryEmployeeRepository destroyed - 2 employees discarded

@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c6ec8bf-a08d-4bda-8082-6a90a0a71cb7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/training/empmanager/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/training/empmanager/audit/AuditLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/training/empmanager/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/training/empmanager/config/CompanyProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/training/empmanager/model/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/training/empmanager/notify/EmailNotifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/training/empmanager/notify/NotificationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/training/empmanager/notify/Notifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/training/empmanager/notify/PushNotifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/training/empmanager/notify/SmsNotifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/training/empmanager/repository/EmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/training/empmanager/repository/FileBackedEmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/training/empmanager/repository/InMemoryEmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/training/empmanager/service/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/training/empmanager/service/EmployeeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/training/empmanager/service/EmployeeValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/training/empmanager/service/InvalidEmployeeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="7c6ec8bf-a08d-4bda-8082-6a90a0a71cb7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +47,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Essa/Desktop/NTI/Spring/Projects/Spring Core - Employee Management System/empmanager/pom.xml",
+    "last_opened_file_path": "C:/Users/Essa/Desktop/NTI/Spring/Projects/JPA - Library Management System/library/pom.xml",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
